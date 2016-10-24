@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="OfficeDocuments">
+    <File Path="OfficeDocuments\SampleTaskPaneApp.xlsx" Url="OfficeDocuments/SampleTaskPaneApp.xlsx" ReplaceContent="TRUE" />
+    <File Path="OfficeDocuments\SampleTaskPaneApp.pptx" Url="OfficeDocuments/SampleTaskPaneApp.pptx" ReplaceContent="TRUE" />
+    <File Path="OfficeDocuments\SampleTaskPaneApp.docx" Url="OfficeDocuments/SampleTaskPaneApp.docx" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

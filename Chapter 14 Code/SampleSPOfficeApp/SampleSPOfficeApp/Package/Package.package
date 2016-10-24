@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="59d8f29f-0cac-40c2-b488-d7e2e42ebf48" 
+        solutionId="59d8f29f-0cac-40c2-b488-d7e2e42ebf48" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SampleSPOfficeApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="2b238dde-26c1-410a-ba8c-e2787e0e7d0d" />
+  </features>
+</package>

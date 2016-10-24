@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\jquery-1.7.1.min.js" Url="Scripts/jquery-1.7.1.min.js" />
+    <File Path="Scripts\jquery-1.7.1.js" Url="Scripts/jquery-1.7.1.js" />
+    <File Path="Scripts\jquery-1.7.1.intellisense.js" Url="Scripts/jquery-1.7.1.intellisense.js" />
+    <File Path="Scripts\knockout-2.2.1.js" Url="Scripts/knockout-2.2.1.js" />
+    <File Path="Scripts\knockout-2.2.1.debug.js" Url="Scripts/knockout-2.2.1.debug.js" />
+    <File Path="Scripts\Models\siteconfigs.js" Url="Scripts/Models/siteconfigs.js" />
+    <File Path="Scripts\ViewModels\config.js" Url="Scripts/ViewModels/config.js" />
+    <File Path="Scripts\ViewModels\default.js" Url="Scripts/ViewModels/default.js" />
+    <File Path="Scripts\ViewModels\roster.js" Url="Scripts/ViewModels/roster.js" />
+    <File Path="Scripts\ViewModels\UserProfile.js" Url="Scripts/ViewModels/UserProfile.js" />
+    <File Path="Scripts\ViewModels\testpermissions.js" Url="Scripts/ViewModels/testpermissions.js" />
+  </Module>
+</Elements>

@@ -1,0 +1,3 @@
+C:\Users\Steve\Documents\Visual Studio 2012\Projects\ClassroomOnline[1]\ClassroomOnline\bin\Debug\ClassroomOnline.pdb
+C:\Users\Steve\Documents\Visual Studio 2012\Projects\ClassroomOnline[1]\ClassroomOnline\obj\Debug\ClassroomOnline.dll
+C:\Users\Steve\Documents\Visual Studio 2012\Projects\ClassroomOnline[1]\ClassroomOnline\obj\Debug\ClassroomOnline.pdb

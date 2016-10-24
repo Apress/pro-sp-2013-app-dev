@@ -1,0 +1,3 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chatper5\Chapter5\JSOMTest\bin\Debug\JSOMTest.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chatper5\Chapter5\JSOMTest\obj\Debug\JSOMTest.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chatper5\Chapter5\JSOMTest\obj\Debug\JSOMTest.pdb

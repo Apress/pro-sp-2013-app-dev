@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Configuration Values" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Configuration Values" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">OrganizationName</Field>
+          <Field Name="Value"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">OrganizationLogoUrl</Field>
+          <Field Name="Value"></Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

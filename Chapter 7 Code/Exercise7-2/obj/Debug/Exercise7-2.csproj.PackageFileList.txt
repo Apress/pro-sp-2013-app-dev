@@ -1,0 +1,1 @@
+bin\Debug\Exercise7-2.wsp

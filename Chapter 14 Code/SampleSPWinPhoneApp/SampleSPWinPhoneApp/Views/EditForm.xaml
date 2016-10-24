@@ -1,0 +1,119 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SampleSPWinPhoneApp.EditForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" x:Name = "EditPage">
+
+    <!-- To enable Design time data binding, uncomment the code below -->
+    <!--<d:DesignProperties.DataContext xmlns:local="clr-namespace:SampleSPWinPhoneApp">
+        <local:DesignEditItemViewModel/>
+    </d:DesignProperties.DataContext>-->
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+<Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <ProgressBar Grid.Row="0" Background="Red" x:Name="progressBar" Opacity="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="470" Height="Auto" IsIndeterminate="{Binding IsBusy}" Visibility="{Binding ShowIfBusy}" />
+    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+        <Grid Width="Auto" Height="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--Title-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="0">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">Title*</TextBlock>
+                <TextBox Style="{StaticResource TextValidationTemplate}" FontSize="{StaticResource PhoneFontSizeNormal}" Name="txtTitle" Text="{Binding [Title], Mode=TwoWay, ValidatesOnNotifyDataErrors=True, NotifyOnValidationError=True}" TextWrapping="Wrap" />
+            </StackPanel>
+            <!--Attachments-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="6">
+                <TextBlock Style="{StaticResource PhoneTextNormalStyle}">Attachment(s)</TextBlock>
+                <StackPanel Margin="0,5,0,5" Orientation="Horizontal">
+                    <Button Width="200" Height="71" Content="Choose File" Click="OnChooseFileButtonClick" />
+                    <Button Width="200" Height="71" Content="Take Photo" Click="OnTakePhotoButtonClick" />
+                </StackPanel>
+                <ListBox Width="Auto" Name="lstBoxAttachments" ItemsSource="{Binding [Attachments]}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox FontSize="{StaticResource PhoneFontSizeNormal}" IsChecked="{Binding IsChecked, Mode=TwoWay}" Content="{Binding Name}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            <!--Location-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="7">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">Location</TextBlock>
+                <TextBox Style="{StaticResource TextValidationTemplate}" FontSize="{StaticResource PhoneFontSizeNormal}" Name="txtLocation" Text="{Binding [Location], Mode=TwoWay, ValidatesOnNotifyDataErrors=True, NotifyOnValidationError=True}" TextWrapping="Wrap" />
+            </StackPanel>
+            <!--EventDate-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="8">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">Start Time*</TextBlock>
+                <TextBox Height="Auto" Style="{StaticResource TextValidationTemplate}" FontSize="{StaticResource PhoneFontSizeNormal}" Name="txtEventDate" Text="{Binding [EventDate], Mode=TwoWay, ValidatesOnNotifyDataErrors=True, NotifyOnValidationError=True}" TextWrapping="Wrap" />
+                <TextBlock FontSize="16" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding DateTimeFormat}" />
+            </StackPanel>
+            <!--EndDate-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="9">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">End Time*</TextBlock>
+                <TextBox Height="Auto" Style="{StaticResource TextValidationTemplate}" FontSize="{StaticResource PhoneFontSizeNormal}" Name="txtEndDate" Text="{Binding [EndDate], Mode=TwoWay, ValidatesOnNotifyDataErrors=True, NotifyOnValidationError=True}" TextWrapping="Wrap" />
+                <TextBlock FontSize="16" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Text="{Binding DateTimeFormat}" />
+            </StackPanel>
+            <!--Description-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="10">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">Description</TextBlock>
+                <TextBox FontSize="{StaticResource PhoneFontSizeNormal}" Height="150" Name="txtDescription" Text="{Binding [Description], Mode=TwoWay}" TextWrapping="Wrap" />
+            </StackPanel>
+            <!--ParticipantsPicker-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="11">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">Attendees</TextBlock>
+                <TextBox Height="Auto" Style="{StaticResource TextValidationTemplate}" FontSize="{StaticResource PhoneFontSizeNormal}" TextWrapping="Wrap" Name="txtParticipantsPicker" Text="{Binding [ParticipantsPicker].Title, Mode=TwoWay, ValidatesOnNotifyDataErrors=True, NotifyOnValidationError=True}" />
+            </StackPanel>
+            <!--Category-->
+            <StackPanel Margin="0,5,0,5" Grid.Row="12">
+                <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextNormalStyle}">Category</TextBlock>
+                <ListBox Height="Auto" Width="Auto" x:Name="lstBoxCategory" ItemsSource="{Binding [Category]}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <RadioButton FontSize="{StaticResource PhoneFontSizeNormal}" GroupName="Category" Content="{Binding Name}" IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Grid>
+
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="btnSubmit" IconUri="/Assets/appbar.save.rest.png" Text="Submit" Click="OnBtnSubmitClick"/>
+            <shell:ApplicationBarIconButton x:Name="btnCancel" IconUri="/Assets/appbar.cancel.rest.png" Text="Cancel" Click="OnCancelButtonClick"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

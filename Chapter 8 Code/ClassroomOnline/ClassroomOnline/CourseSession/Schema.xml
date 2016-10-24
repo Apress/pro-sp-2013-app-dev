@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CourseSession" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CourseSession" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    
+      
+      
+    <ContentType ID="0x01007329729b267e431badc800e70fbb1b8e" Name="ListFieldsContentType">
+      <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{5c0c3be9-d983-45bd-b740-013d0e423e24}" Name="CourseName" /><FieldRef ID="{68baa3ae-1cfb-4dee-b739-e303eddd15d3}" Name="SessionName" /><FieldRef ID="{c570fdd7-c9fe-4556-9143-f75ed4ed6151}" Name="BuildingName" /><FieldRef ID="{c12d377a-0234-42eb-a024-87f96efb3ed1}" Name="RoomNumber" /><FieldRef ID="{6ace3400-273a-4585-aff5-e114a880b2c7}" Name="FacultyMember" /></FieldRefs>
+    </ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Course Description" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="CourseName" ID="{5c0c3be9-d983-45bd-b740-013d0e423e24}" DisplayName="Course Name" StaticName="CourseId" FillInChoice="TRUE" Type="Lookup" List="Lists/Course" Group="ClassroomOnline" Required="TRUE" ShowField="Title" /><Field Name="SessionName" ID="{68baa3ae-1cfb-4dee-b739-e303eddd15d3}" DisplayName="Session Name" StaticName="SessionId" FillInChoice="TRUE" Type="Lookup" List="Lists/Session" Group="ClassroomOnline" Required="TRUE" ShowField="Title" /><Field Name="BuildingName" ID="{c570fdd7-c9fe-4556-9143-f75ed4ed6151}" DisplayName="Building Name" Type="Text" /><Field Name="RoomNumber" ID="{c12d377a-0234-42eb-a024-87f96efb3ed1}" DisplayName="Room Number" Type="Text" /><Field Name="FacultyMember" ID="{6ace3400-273a-4585-aff5-e114a880b2c7}" DisplayName="Faculty Member" Type="Number" /></Fields>
+    <Views>
+      
+      
+    
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="CourseName" /><FieldRef Name="SessionName" /><FieldRef Name="BuildingName" /><FieldRef Name="RoomNumber" /><FieldRef Name="FacultyMember" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

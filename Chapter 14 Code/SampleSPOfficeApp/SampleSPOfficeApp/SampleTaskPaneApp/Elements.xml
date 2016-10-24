@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SampleTaskPaneApp">
+    <File Path="SampleTaskPaneApp\Home\Home.css" Url="SampleTaskPaneApp/Home/Home.css" ReplaceContent="TRUE" />
+    <File Path="SampleTaskPaneApp\Home\Home.html" Url="SampleTaskPaneApp/Home/Home.html" ReplaceContent="TRUE" />
+    <File Path="SampleTaskPaneApp\Home\Home.js" Url="SampleTaskPaneApp/Home/Home.js" ReplaceContent="TRUE" />
+    <File Path="SampleTaskPaneApp\App.css" Url="SampleTaskPaneApp/App.css" ReplaceContent="TRUE" />
+    <File Path="SampleTaskPaneApp\App.js" Url="SampleTaskPaneApp/App.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

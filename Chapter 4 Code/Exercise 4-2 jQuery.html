@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>    
+    <script type="text/javascript">
+
+    $(document).ready(startProcessing1);
+    // Could also be written as:  $(startProcessing1);
+
+    function startProcessing1() 
+    {
+        // Change the background on all <LI> tags to pink.
+        jQuery("li").css("background-color","pink");        
+        
+        // Get the text in ALL of the the <P> tags and bold them using a chain.
+        alert($("p").css("font-weight","bold").text().length);
+    }
+    
+    function startProcessing2() 
+    {
+        // Set the first paragraph to normal weight.
+        $("p:first").css("font-weight","normal");
+        
+        // Set the element with ID=byid.
+        $("#byid").text('This is the text set by ID.');
+
+        // Select elements by class.
+        $(".byclass").text('This is the text set by class.');
+        $("p.byclass").text($("p.byclass").text() + ' And this is on the paragraph!');
+
+        // Use multiple selectors to return ALL matching elements.
+        $("#byid,.byclass").css("background-color","yellow");
+        
+        // Search for elements based on the document structure.
+        $("li ol").css("background-color","red");     // Sets the second <OL> tag, but not the <LI>s within it.
+        $("ol","li").css("background-color","green");   // Searches for <OL>s inside of <LI>s.
+				$("li>ol").css("background-color","blue");     // Finds nothing because <OL> is not immediately inside <LI>.
+        
+        // Search for attributes.
+        $("*[myattr]")
+            .prepend("This text is prepended to the DIV.")
+            .css("background-color","gray");    
+    }
+    
+    function startProcessing3() 
+    {
+        // Chain calls and nest filters
+        $("li")                                     // Select all <LI> tages, at all levels.
+            .css("background-color","pink")         // Set their backgrounds to PINK.
+            .find("li")                             // Find any <LI> tags nested in those tags.
+                .css("background-color","green")    // Set their backgrounds to GREEN.
+                .filter(":even")                    // Remove the even position elements from the set.
+                    .css("background-color","blue") // Set their backgrounds to BLUE.
+                .end()                              // Return to the set of all second-level <LI> tags.
+                .css("text-decoration","underline") // Underline the text.
+            .end()                                  // Return to the set of all <LI> tags.
+            .css("font-size","20pt")                // Set the font size to 20 pts.
+            ;            
+    }
+    
+    function startProcessing4() 
+    {
+    	  $("body")                      // The body of the HTML document
+    	      .children()                // All child elements directly beneath the body
+    	      .eq(2)                     // The outer <DIV> tag
+    	      .prev()                    // The <H1> tag
+    	      .nextAll()                 // The <DIV> and <P> tags after the <H1>
+    	      .eq(0)                     // The outer <DIV> tag
+    	      .find("ol ol")             // The inner <OL> tag
+    	      .parent()                  // The inner <DIV> tag
+    	      .css("background-color","black");
+    }
+
+    function startProcessing5() 
+    {
+    	  $("div div").hide();
+    	  alert("It's gone!");
+    	  
+    	  $("div div").show();
+    	  alert("It's back!");
+    	  
+    	  var html = $("div div").html();
+    	  html = html.replace("ol>","ul>");
+    	  $("div div").html(html);    	  
+    }
+
+    function startProcessing6() 
+    {
+    	  $("li").each(
+    	      function(index) {
+    	          if (index % 3 == 0)
+    	              $(this).css("background-color","red");
+    	      }
+    	  );
+    }
+
+    </script>
+
+    <h1>The Joy of JavaScript!!!</h1>
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin lorem ac massa bibendum aliquet.</p>
+        <ol>
+            <li>Pellentesque quis justo a orci euismod accumsan. </li>
+            <li>Mauris eu purus ligula, ac pellentesque augue.
+                <div myattr='findthediv'>
+                     <ol>
+                        <li>Pellentesque quis justo a orci euismod accumsan. </li>
+                        <li class='byclass'>Mauris eu purus ligula, ac pellentesque augue.</li>
+                        <li>Fusce non metus eu libero feugiat luctus. </li>
+                        <li>Maecenas volutpat varius nunc, et sagittis neque euismod quis.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>Fusce non metus eu libero feugiat luctus. </li>
+            <li id='byid'>Maecenas volutpat varius nunc, et sagittis neque euismod quis.</li>
+        </ol>
+    </div>
+
+    <p class='byclass'>Justo a orci euismod accumsan. Mauris eu purus ligula, ac pellentesque augue.</p>
+</body>
+</html>

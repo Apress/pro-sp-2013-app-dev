@@ -1,0 +1,5 @@
+obj\Debug\_ClassroomOnline.g.cs
+obj\Debug\Workflow.g.cs
+obj\Debug\ClassroomOnline.Grading_Workflow_Workflow_BeforeInitializeComponentHelper.cs
+obj\Debug\_AssemblyInfo_bbba752cff4049a1b02ed74568ad724f.g.cs
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter13\ClassroomOnline\ClassroomOnline\obj\Debug\ClassroomOnline.Grading_Workflow_Workflow_CompiledExpressionRoot.cs

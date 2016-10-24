@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>    
+    <script type="text/javascript">
+
+    $(document).ready(startProcessing);
+
+    function startProcessing() 
+    {
+        $("#btn").bind("click", btnClick);
+        
+        $("#txtSample").change(onChange);
+        $("#chkBold").change("This is the data I passed.", onChange);
+        $("#selBgcolor").change(onChange);
+        $("#selFontFamily").change(onChange);
+        $("#selFontSize").change(onChange).trigger("change");        
+    }
+    
+    function btnClick(event) 
+    {
+        applyStyles("*");
+    }
+    
+    function onChange(event) 
+    {
+        $("#log").append("<span>" + event.target.id + "." + event.type + ": " + event.target.value + "</span><br />");
+
+        if (event.data)
+            $("#log").append("<span>Data Received: " + event.data + "</span><br />");
+            
+        applyStyles("#sample");
+    }
+    
+    function applyStyles(selector)
+    {
+    	$(selector)
+    	    .css("font-family",$("#selFontFamily").val())
+    	    .css("font-size",$("#selFontSize").val())
+    	    .css("background-color",$("#selBgcolor").val())
+    	    .css("font-weight", ($("#chkBold").is(":checked")) ? "bold" : "normal")
+    	    .each(function(index) 
+    	          {
+    	          	if (this.id == "sample")
+    	          	    $(this).text($("#txtSample").val());
+    	          });    	    	    
+    }
+        
+    </script>
+
+    <h1>Data Entry Validation with JQuery</h1>
+    
+    <table>
+    	<tr>
+    		<td>Sample Text:</td>
+    		<td><input type="text" id="txtSample" value="Sample Text" /></td>
+    	</tr>
+    	<tr>
+    		<td>Bold?</td>
+    		<td><input type="checkbox" id="chkBold" /></td>
+    	</tr>
+    	<tr>
+    		<td>Font Family:</td>
+    		<td>
+    		    <select id="selFontFamily">
+    		        <option>Verdana</option>
+    		        <option>Helvatica</option>
+    		        <option>Garamond</option>
+    		    </select>
+    		</td>
+    	</tr>   
+    	<tr>
+    		<td>Font Size:</td>
+    		<td>
+    		    <select id="selFontSize">
+    		        <option>10pt</option>
+    		        <option>20pt</option>
+    		        <option>30pt</option>
+    		    </select>
+    		</td>
+    	</tr>   
+    	<tr>
+    		<td>Background:</td>
+    		<td>
+    		    <select id="selBgcolor">
+    		        <option>White</option>
+    		        <option>Red</option>
+    		        <option>Blue</option>
+    		        <option>Green</option>
+    		    </select>
+    		</td>
+    	</tr>   
+    </table>
+
+    <div id="sample" style="width:200px;height:100px;border-style:solid;margin:15px">
+    </div>
+    <div id="log" style="width:600px;border-style:solid;margin:15px">
+    </div>
+
+    <input type="button" id="btn" value="Set on Page" />    			        	
+</body>
+</html>

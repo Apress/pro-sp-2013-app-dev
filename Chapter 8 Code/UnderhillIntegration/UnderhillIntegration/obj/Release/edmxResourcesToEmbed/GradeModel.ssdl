@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClassroomOnlineModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ClassroomOnlineModelStoreContainer">
+    <EntitySet Name="Grade" EntityType="ClassroomOnlineModel.Store.Grade" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="GradeID" />
+    </Key>
+    <Property Name="GradeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassroomURL" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="AssignmentTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="StudentName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PointsPossible" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PercentOfCourseGrade" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="PointsAchieved" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="EnteredBy" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="EnteredDate" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>

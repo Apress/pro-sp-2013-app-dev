@@ -1,0 +1,5 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-1\bin\Debug\Exercise7-1.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-1\bin\Debug\Exercise7-1.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-1\obj\Debug\Exercise7-1.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-1\obj\Debug\Exercise7-1.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-1\obj\Debug\Exercise7-1.pdb

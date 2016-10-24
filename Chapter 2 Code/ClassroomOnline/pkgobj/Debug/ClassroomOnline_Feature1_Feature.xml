@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="53b81a78-8ef7-44bb-92c6-571d02ce5057" Scope="Web" Title="ClassroomOnline Feature1">
+  <ElementManifests>
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementFile Location="Images\AppLogo.png" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\_references.js" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementManifest Location="SiteAssets\Elements.xml" />
+    <ElementManifest Location="ConfigurationValuesInstance\Elements.xml" />
+    <ElementManifest Location="ConfigurationValues\Elements.xml" />
+    <ElementFile Location="ConfigurationValues\Schema.xml" />
+  </ElementManifests>
+</Feature>

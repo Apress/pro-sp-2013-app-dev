@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClassroomOnlineModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ClassroomOnlineEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Grades" EntityType="ClassroomOnlineModel.Grade" />
+  </EntityContainer>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="GradeID" />
+    </Key>
+    <Property Name="GradeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassroomURL" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="AssignmentTitle" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="StudentName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PointsPossible" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PercentOfCourseGrade" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PointsAchieved" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="EnteredBy" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="EnteredDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

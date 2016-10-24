@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SampleTaskPaneApp">
+    <File Path="SampleTaskPaneAppManifest\SampleTaskPaneApp.xml" Url="AgaveCatalog/SampleTaskPaneAppOfficeAppManifest.xml" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Exercise7-1", "Exercise7-1\Exercise7-1.vbproj", "{590EA55F-9117-455C-AE0A-054DB1DB15F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise7-2Web", "Exercise7-2Web\Exercise7-2Web.csproj", "{BC33C870-91D6-4754-8E9E-16C1AF466041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise7-2", "Exercise7-2\Exercise7-2.csproj", "{B4B35907-1E01-4742-9315-BEA527F68B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise7-3", "Exercise7-3\Exercise7-3.csproj", "{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise7-3Web", "Exercise7-3Web\Exercise7-3Web.csproj", "{AE349E44-C5EE-4C35-A676-B767C998FB6B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://swright.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Exercise7-1\\Exercise7-1.vbproj
+		SccProjectName1 = Exercise7-1
+		SccLocalPath1 = Exercise7-1
+		SccProjectUniqueName2 = Exercise7-2Web\\Exercise7-2Web.csproj
+		SccProjectName2 = Exercise7-2Web
+		SccLocalPath2 = Exercise7-2Web
+		SccProjectUniqueName3 = Exercise7-2\\Exercise7-2.csproj
+		SccProjectName3 = Exercise7-2
+		SccLocalPath3 = Exercise7-2
+		SccProjectUniqueName4 = Exercise7-3\\Exercise7-3.csproj
+		SccProjectName4 = Exercise7-3
+		SccLocalPath4 = Exercise7-3
+		SccProjectUniqueName5 = Exercise7-3Web\\Exercise7-3Web.csproj
+		SccProjectName5 = Exercise7-3Web
+		SccLocalPath5 = Exercise7-3Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{590EA55F-9117-455C-AE0A-054DB1DB15F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590EA55F-9117-455C-AE0A-054DB1DB15F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590EA55F-9117-455C-AE0A-054DB1DB15F5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{590EA55F-9117-455C-AE0A-054DB1DB15F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590EA55F-9117-455C-AE0A-054DB1DB15F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590EA55F-9117-455C-AE0A-054DB1DB15F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BC33C870-91D6-4754-8E9E-16C1AF466041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC33C870-91D6-4754-8E9E-16C1AF466041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC33C870-91D6-4754-8E9E-16C1AF466041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC33C870-91D6-4754-8E9E-16C1AF466041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B35907-1E01-4742-9315-BEA527F68B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B35907-1E01-4742-9315-BEA527F68B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B35907-1E01-4742-9315-BEA527F68B21}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B4B35907-1E01-4742-9315-BEA527F68B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B35907-1E01-4742-9315-BEA527F68B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B35907-1E01-4742-9315-BEA527F68B21}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EB2EA4-B3F0-46F2-879B-D122CBF1AEBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AE349E44-C5EE-4C35-A676-B767C998FB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE349E44-C5EE-4C35-A676-B767C998FB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE349E44-C5EE-4C35-A676-B767C998FB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE349E44-C5EE-4C35-A676-B767C998FB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

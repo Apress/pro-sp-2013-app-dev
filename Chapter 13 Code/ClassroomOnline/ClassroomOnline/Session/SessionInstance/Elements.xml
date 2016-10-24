@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Session" OnQuickLaunch="FALSE" TemplateType="10001" Url="Lists/Session" Description="List to track the individual academic sessions.">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Session Name">Spring 2013</Field>
+          <Field Name="Start Date">1/10/2013</Field>
+          <Field Name="End Date">5/11/2013</Field>
+        </Row>
+        <Row>
+          <Field Name="Session Name">Summer 2013</Field>
+          <Field Name="Start Date">6/2/2013</Field>
+          <Field Name="End Date">7/31/2013</Field>
+        </Row>
+        <Row>
+          <Field Name="Session Name">Fall 2013</Field>
+          <Field Name="Start Date">8/23/2013</Field>
+          <Field Name="End Date">12/23/2013</Field>
+        </Row>
+        <Row>
+          <Field Name="Session Name">Spring 2014</Field>
+          <Field Name="Start Date">1/7/2014</Field>
+          <Field Name="End Date">5/9/2014</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

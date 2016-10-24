@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="53c28cd8-a396-45d0-b7ed-313f615add11" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="ClassroomOnline_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

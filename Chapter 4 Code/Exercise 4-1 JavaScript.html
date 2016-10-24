@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<body>
+    <div>
+        <h1>The Joy of JavaScript!!!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ol>
+            <li>Pellentesque quis justo a orci euismod accumsan. </li>
+            <li>Mauris eu purus ligula, ac pellentesque augue.</li>
+            <li>Fusce non metus eu libero feugiat luctus. </li>
+            <li>Maecenas volutpat varius nunc, et sagittis neque euismod quis.</li>
+        </ol>
+    </div>
+
+<script type="text/javascript">
+    
+    // Set some text in a DOM element.
+    document.getElementsByTagName('li')[1].innerText = "This is my text.";
+
+    // Create identical empty objects.
+    var o1 = new Object();
+    var o2 = {};
+
+    // Create a template for creating objects. This is a 'Constructor'.
+    function Person(firstName,lastName,heightInches,weight)
+    {
+        var self = this;
+        self.firstName = firstName;
+        self.lastName = lastName;
+        self.heightInches = heightInches;
+        self.weight = weight;
+    
+        // Declare a method on the constructed objects.
+            self.stretch = function(factor) { this.heightInches = this.heightInches * factor; }
+    }
+        
+    // Construct a person object and call the method.
+    var person1 = new Person("Steve", "Wright", 72, "None of your business!");
+    person1.stretch(1.3);
+    
+    // Create the object using JavaScript object literal notation.
+    var person2 = { firstName:"David", 
+    	              lastName:"Petersen", 
+    	              heightInches:73.5, 
+                    weight:"He was a Marine. Don\'t Ask!" };
+                   
+    // Create the object using the contstructor instead.
+    person2 = new Person("David", "Petersen", 73.5, "He was a Marine. Don\'t Ask!");
+    
+    // Add a method to the person prototype.
+    Person.prototype.diet = function(factor) { this.weight = this.weight * factor; }
+    
+    // The method is automatically usable from any object using that prototype.
+    person1.diet(0.8);
+    person2.diet(0.8);
+    
+    // true because Person is the contructor we used.
+    alert(person1 instanceof Person);
+    
+    // true because everything is an Object.
+    alert(person1 instanceof Object);
+        
+    // false because String does not exist anywhere in the objects chain.
+    alert(person1 instanceof String);
+
+    // create an object using JSON.
+    var personUsingJSON = 
+        { "name" : "Steve Wright",
+          "numberOfPets" : 2,
+          "favoriteValues" : 
+              [ "Janet says \"Hi\"."
+                , 47
+                , true
+                , { "hobby" : "Woodworking",
+                    "motorcycle" : "Honda" 
+                  } 
+              ]
+}
+
+</script>
+
+</body>
+</html>

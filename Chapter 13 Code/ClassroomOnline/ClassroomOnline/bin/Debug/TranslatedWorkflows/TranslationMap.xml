@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TranslatedWorkflowsFileMap xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Workflow.Service.Build">
+  <fileMap xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringstring>
+      <d2p1:Key>C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter13\ClassroomOnline\ClassroomOnline\GradingWorkflow\Workflow.xaml</d2p1:Key>
+      <d2p1:Value>C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter13\ClassroomOnline\ClassroomOnline\bin\Debug\TranslatedWorkflows\g4x1uax3.50a.xaml</d2p1:Value>
+    </d2p1:KeyValueOfstringstring>
+  </fileMap>
+</TranslatedWorkflowsFileMap>

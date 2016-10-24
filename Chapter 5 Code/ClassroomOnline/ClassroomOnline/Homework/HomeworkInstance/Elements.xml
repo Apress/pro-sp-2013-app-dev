@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Homework" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/Homework" Description="This document library will house homework assignments turned in by students."></ListInstance>
+</Elements>

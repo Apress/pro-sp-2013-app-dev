@@ -1,0 +1,10 @@
+﻿<WorkflowAssociation xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>GradingWorkflow - WorkflowStart</Description>
+  <DisplayName>GradingWorkflow - WorkflowStart</DisplayName>
+  <Enabled>true</Enabled>
+  <EventSourceGUID>Lists/Homework</EventSourceGUID>
+  <EventType>WorkflowStart</EventType>
+  <HistoryListId>Lists/WorkflowHistoryList</HistoryListId>
+  <Id>2fae2494-a5c6-4625-a6ca-24b932d37276</Id>
+  <TaskListId>Lists/WorkflowTaskList</TaskListId>
+</WorkflowAssociation>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart 
+    Name="MyGrades" 
+    Title="My Grades" 
+    Description="Lists the grades for the currently signed in user." 
+    DefaultHeight="300" 
+    DefaultWidth="700">
+
+    <Content 
+      Type="html" 
+      Src="~appWebUrl/Pages/MyGrades.aspx?{StandardTokens}" />
+
+    <Properties> </Properties>
+  </ClientWebPart>
+</Elements>

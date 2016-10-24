@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="fc61688b-8d32-4f05-a069-76f486f12994" 
+        solutionId="4cdd32b8-00ce-4dd0-9290-a32c25103619" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ClassroomOnline"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="53b81a78-8ef7-44bb-92c6-571d02ce5057" />
+  </features>
+</package>

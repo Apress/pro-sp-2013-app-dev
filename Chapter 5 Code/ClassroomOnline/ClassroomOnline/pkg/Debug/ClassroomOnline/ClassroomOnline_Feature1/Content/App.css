@@ -1,0 +1,17 @@
+﻿/* Place custom styles below */
+
+.orglogo{
+    text-align: left;
+    font-size: 2em;
+    text-decoration: underline;
+}
+.applogo {
+    margin: 5px;
+    text-align: right;
+    font-size: 2em;
+    font-weight:bold;
+}
+
+#mainmenu{
+    clear:both;
+}

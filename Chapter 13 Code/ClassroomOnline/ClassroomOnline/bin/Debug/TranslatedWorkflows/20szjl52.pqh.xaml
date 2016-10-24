@@ -1,0 +1,469 @@
+<Activity mc:Ignorable="sads" x:Class="ClassroomOnline.Grading_Workflow.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:made="clr-namespace:Microsoft.Activities.Design.ExpressionTranslation;assembly=Microsoft.Activities.Design"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:p1="wf://workflow.windows.net/$Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sads:DebugSymbol.Symbol="9xDJqGl04di2z8WLB7IPl4vOfkM6XFVzZXJzXFN0ZXZlXERvY3VtZW50c1xURlNPbmxpbmVcU2hhcmVQb2ludCAyMDEzIEFwcHNcQ2hhcHRlcjlcQ2xhc3Nyb29tT25saW5lXENsYXNzcm9vbU9ubGluZVxHcmFkaW5nV29ya2Zsb3dcV29ya2Zsb3cueGFtbB8vA4YCDgIBAToFThsCAVlPBV0cAgFSXgVpFwIBTWoFdRwCAUh2BXwZAgFEfQWdARUCASyeAQWEAgoCAQJ9d33UAgIBQ33XB33kBwIBQn2cC32fCwIBQX2RA32+BQIBQH3xBn30BgIBPn33BX2CBgIBO32yC324CwIBOn3gCn3uCgIBOH2/C33OCwIBNn32B33LCgIBNX2RBn3dBgIBNH1UfWICATN95Qt96wsCATB97AJ9+wICAS991wV95gUCAS59hQt9iAsCAS2lAQn0ARQCAQv3AQmCAhQCAQWtAQu9ASECASa+AQvPASICAR3QAQvnASECARDoAQvzAR8CAQz3AaMB9wG4AQIBBg==">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID0" Name="hwProps" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID1" Name="ModifiedBy" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID2" Name="AssignmentTitle" />
+      <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID3" Name="studentProps" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID4" Name="StudentName" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID5" Name="GradingTaskOutcome" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID6" Name="GradingTaskID" />
+      <Variable x:TypeArguments="x:Int32" Name="HWItemID" />
+    </Sequence.Variables>
+    <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}" DisplayName="Lookup Current SPListItem">
+      <p1:LookupSPListItem.ItemId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+            <p1:GetCurrentItemId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPListItem.ItemId>
+      <p1:LookupSPListItem.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p1:GetCurrentListId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPListItem.ListId>
+      <p1:LookupSPListItem.Result>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="hwProps">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="hwProps">
+                <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="hwProps" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </p1:LookupSPListItem.Result>
+    </p1:LookupSPListItem>
+    <p:GetODataProperties DisplayName="Get HW Item Properties">
+      <p:GetODataProperties.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="hwProps">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="p:DynamicValue" x:Key="hwProps">
+                <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="hwProps" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p:GetODataProperties.Source>
+      <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+        <OutArgument x:TypeArguments="x:Int32" x:Key="EditorId">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="ModifiedBy">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="ModifiedBy">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID1}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="ModifiedBy" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Title">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="AssignmentTitle">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="AssignmentTitle">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="AssignmentTitle" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </scg:Dictionary>
+    </p:GetODataProperties>
+    <p1:LookupSPUser DisplayName="Lookup Student SPUser">
+      <p1:LookupSPUser.PrincipalId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32" DisplayName="ModifiedBy">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:Int32" x:Key="ModifiedBy">
+                <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID1}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="ModifiedBy" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPUser.PrincipalId>
+      <p1:LookupSPUser.Result>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="studentProps">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="studentProps">
+                <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID3}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="studentProps" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </p1:LookupSPUser.Result>
+    </p1:LookupSPUser>
+    <p:GetODataProperties DisplayName="GetDynamicValueProperties">
+      <p:GetODataProperties.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="studentProps">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="p:DynamicValue" x:Key="studentProps">
+                <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID3}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="studentProps" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p:GetODataProperties.Source>
+      <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+        <OutArgument x:TypeArguments="x:String" x:Key="Title">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="StudentName">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="StudentName">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID4}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="StudentName" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </scg:Dictionary>
+    </p:GetODataProperties>
+    <p1:WriteToHistory>
+      <p1:WriteToHistory.Message>
+        <InArgument x:TypeArguments="x:String">
+          <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="StudentName + &quot; has submitted '&quot; + AssignmentTitle + &quot;' for grading.&quot;">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="StudentName">
+                <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID4}" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="AssignmentTitle">
+                <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <p:ConcatString>
+              <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                <p:ConcatString>
+                  <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                    <p:ConcatString>
+                      <p:ConcatString.Result>
+                        <OutArgument x:TypeArguments="x:String" />
+                      </p:ConcatString.Result>
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="StudentName" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression=" has submitted '" />
+                    </p:ConcatString>
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="AssignmentTitle" />
+                  </InArgument>
+                </p:ConcatString>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="' for grading." />
+            </p:ConcatString>
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:WriteToHistory.Message>
+    </p1:WriteToHistory>
+    <p1:SingleTask Body="{x:Null}" DueDate="{x:Null}" TaskId="{x:Null}" AssignedTo="Steve Wright" AssignmentEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;You have a new task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" AssignmentEmailSubject="Task Assigned" CancelationEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;One of your tasks was canceled and deleted. You do not need to take any further action on that task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" CancelationEmailSubject="Task Canceled" CompletedStatus="Completed" ContentTypeId="0x0108003365C4474CAE8C42BCE396314E88E51F0078D0295D11C649849467E259ECF0FD4B" DefaultTaskOutcome="0" DisplayName="Assign Grading Task" OutcomeFieldName="TaskOutcome" OverdueEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;You have an &lt;/span&gt;&lt;span style='font-size:13.5pt;color:#ff3b3b;'&gt;overdue&lt;/span&gt;&lt;span style='font-size:13.5pt'&gt; task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" OverdueEmailSubject="Task Overdue" OverdueReminderRepeat="1" OverdueRepeatTimes="1" SendReminderEmail="True" Title="Workflow task" WaitForTaskCompletion="True">
+      <p1:SingleTask.Outcome>
+        <OutArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="GradingTaskOutcome">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="GradingTaskOutcome">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID5}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="GradingTaskOutcome" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </p1:SingleTask.Outcome>
+      <p1:SingleTask.RelatedContentLinkListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p1:GetCurrentListId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:SingleTask.RelatedContentLinkListId>
+      <p1:SingleTask.RelatedContentLinkListItemId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p1:GetCurrentItemGuid />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:SingleTask.RelatedContentLinkListItemId>
+      <p1:SingleTask.RelatedContentLinkListItemIntegerId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+            <p1:GetCurrentItemId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:SingleTask.RelatedContentLinkListItemIntegerId>
+      <p1:SingleTask.TaskItemId>
+        <OutArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="GradingTaskID">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="GradingTaskID">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID6}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="GradingTaskID" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </p1:SingleTask.TaskItemId>
+    </p1:SingleTask>
+    <If>
+      <If.Condition>
+        <InArgument x:TypeArguments="x:Boolean">
+          <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="GradingTaskOutcome == 0">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:Int32" x:Key="GradingTaskOutcome">
+                <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID5}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <p:IsEqual x:TypeArguments="x:Int32">
+              <p:IsEqual.Left>
+                <InArgument x:TypeArguments="x:Int32" EvaluationOrder="0">
+                  <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="GradingTaskOutcome" />
+                </InArgument>
+              </p:IsEqual.Left>
+              <p:IsEqual.Right>
+                <InArgument x:TypeArguments="x:Int32" EvaluationOrder="1" Expression="0" />
+              </p:IsEqual.Right>
+            </p:IsEqual>
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </If.Condition>
+      <If.Then>
+        <Sequence>
+          <Sequence.Variables>
+            <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID7" Name="taskProps" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID8" Name="PercentOfCourseGrade" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID9" Name="PointsPossible" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID10" Name="PointsAchieved" />
+            <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID11" Name="gradeProps" />
+          </Sequence.Variables>
+          <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}" DisplayName="Lookup Grading Task">
+            <p1:LookupSPListItem.ItemId>
+              <InArgument x:TypeArguments="x:Int32">
+                <p:ExpressionContainerValue x:TypeArguments="x:Int32" DisplayName="GradingTaskID">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:Int32" x:Key="GradingTaskID">
+                      <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID6}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="GradingTaskID" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:LookupSPListItem.ItemId>
+            <p1:LookupSPListItem.ListId>
+              <InArgument x:TypeArguments="s:Guid">
+                <p:ExpressionContainerValue x:TypeArguments="s:Guid" DisplayName="System.Guid.Parse(&quot;{$ListId:Lists/WorkflowTaskList;}&quot;)">
+                  <p:ParseGuid Value="{}{$ListId:Lists/WorkflowTaskList;}" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:LookupSPListItem.ListId>
+            <p1:LookupSPListItem.Result>
+              <OutArgument x:TypeArguments="p:DynamicValue">
+                <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="taskProps">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="taskProps">
+                      <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID7}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="taskProps" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+            </p1:LookupSPListItem.Result>
+          </p1:LookupSPListItem>
+          <p:GetODataProperties DisplayName="GetDynamicValueProperties">
+            <p:GetODataProperties.Source>
+              <InArgument x:TypeArguments="p:DynamicValue">
+                <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="taskProps">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="p:DynamicValue" x:Key="taskProps">
+                      <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID7}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="taskProps" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p:GetODataProperties.Source>
+            <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+              <OutArgument x:TypeArguments="x:String" x:Key="PercentOfCourseGrade">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PercentOfCourseGrade">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PercentOfCourseGrade">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID8}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PercentOfCourseGrade" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="PointsPossible">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PointsPossible">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PointsPossible">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID9}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PointsPossible" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="PointsAchieved">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PointsAchieved">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PointsAchieved">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID10}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PointsAchieved" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+            </scg:Dictionary>
+          </p:GetODataProperties>
+          <p:BuildDynamicValue DisplayName="Build Grade Item Properties">
+            <p:BuildDynamicValue.Result>
+              <InOutArgument x:TypeArguments="p:DynamicValue">
+                <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="gradeProps">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="gradeProps">
+                      <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID11}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="gradeProps" />
+                </p:ExpressionContainerReference>
+              </InOutArgument>
+            </p:BuildDynamicValue.Result>
+            <scg:Dictionary x:TypeArguments="x:String, InArgument">
+              <InArgument x:TypeArguments="x:String" x:Key="Title">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="AssignmentTitle">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="AssignmentTitle">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="AssignmentTitle" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="PercentofCourseGrade">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PercentOfCourseGrade">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="PercentOfCourseGrade">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID8}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="PercentOfCourseGrade" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="PointsAchieved">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PointsAchieved">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="PointsAchieved">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID10}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="PointsAchieved" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="PointsPossible">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PointsPossible">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="PointsPossible">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID9}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="PointsPossible" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="StudentName">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="StudentName">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="StudentName">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID4}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="StudentName" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </scg:Dictionary>
+          </p:BuildDynamicValue>
+          <p1:CreateListItem CreatedListItemProperties="{x:Null}" ItemGuid="{x:Null}" ItemId="{x:Null}" ListItemProperties="{x:Null}" DisplayName="Create Grade Item">
+            <p1:CreateListItem.ListId>
+              <InArgument x:TypeArguments="s:Guid">
+                <p:ExpressionContainerValue x:TypeArguments="s:Guid" DisplayName="System.Guid.Parse(&quot;{$ListId:Lists/Grades;}&quot;)">
+                  <p:ParseGuid Value="{}{$ListId:Lists/Grades;}" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:CreateListItem.ListId>
+            <p1:CreateListItem.ListItemPropertiesDynamicValue>
+              <InArgument x:TypeArguments="p:DynamicValue">
+                <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="gradeProps">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="p:DynamicValue" x:Key="gradeProps">
+                      <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID11}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="gradeProps" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:CreateListItem.ListItemPropertiesDynamicValue>
+          </p1:CreateListItem>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}" DisplayName="Send Rejection E-Mail" Subject="Assignment Rejected">
+          <p1:Email.Body>
+            <InArgument x:TypeArguments="x:String">
+              <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Your submission for '&quot; + AssignmentTitle + &quot;' has been rejected. Please contact your instructor.&quot;">
+                <p:ExpressionContainerValue.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="AssignmentTitle">
+                    <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                  </InArgument>
+                </p:ExpressionContainerValue.Arguments>
+                <p:ConcatString>
+                  <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                    <p:ConcatString>
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Your submission for '" />
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="AssignmentTitle" />
+                      </InArgument>
+                    </p:ConcatString>
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="' has been rejected. Please contact your instructor." />
+                </p:ConcatString>
+              </p:ExpressionContainerValue>
+            </InArgument>
+          </p1:Email.Body>
+          <p1:Email.To>
+            <InArgument x:TypeArguments="sco:Collection(x:String)">
+              <p:ExpressionContainerValue x:TypeArguments="sco:Collection(x:String)" DisplayName="new System.Collections.ObjectModel.Collection&lt;string&gt;() { StudentName }">
+                <p:ExpressionContainerValue.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="StudentName">
+                    <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID4}" />
+                  </InArgument>
+                </p:ExpressionContainerValue.Arguments>
+                <p:BuildCollection x:TypeArguments="x:String">
+                  <p:BuildCollection.Values>
+                    <InArgument x:TypeArguments="x:String">
+                      <ArgumentValue x:TypeArguments="x:String" ArgumentName="StudentName" />
+                    </InArgument>
+                  </p:BuildCollection.Values>
+                </p:BuildCollection>
+              </p:ExpressionContainerValue>
+            </InArgument>
+          </p1:Email.To>
+        </p1:Email>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

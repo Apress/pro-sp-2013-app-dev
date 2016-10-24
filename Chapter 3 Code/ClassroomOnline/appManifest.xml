@@ -1,0 +1,19 @@
+﻿<!--Created:cbbc9d22-5cf7-4e4c-8ee9-42a772aae58a-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     ProductID="{144d64fc-af7d-4336-b1fe-528b0f013724}" 
+     Version="1.0.0.0" 
+     SharePointMinVersion="15.0.0.0" 
+     Name="ClassroomOnline">
+  <Properties>
+    <Title>ClassroomOnline</Title>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <InstalledEventEndpoint>~remoteAppUrl/AppEventReceiver.svc</InstalledEventEndpoint>
+    <UninstallingEventEndpoint>~remoteAppUrl/AppEventReceiver.svc</UninstallingEventEndpoint>
+    <UpgradedEventEndpoint>~remoteAppUrl/AppEventReceiver.svc</UpgradedEventEndpoint>
+  </Properties>
+  <AppPrincipal>
+    <AutoDeployedWebApplication />
+  </AppPrincipal>
+  <AppPermissionRequests>
+  </AppPermissionRequests>
+</App>

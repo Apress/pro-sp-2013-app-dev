@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="e6fc1dc3-8d19-4533-a964-ef12c9e9a9d9" Scope="Web" Title="ClassroomOnline Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\Config.aspx" />
+    <ElementFile Location="Pages\app.master" />
+    <ElementFile Location="Pages\hwlist.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\jquery-1.7.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.intellisense.js" />
+    <ElementFile Location="Scripts\knockout-2.2.1.js" />
+    <ElementFile Location="Scripts\knockout-2.2.1.debug.js" />
+    <ElementFile Location="Scripts\Models\siteconfigs.js" />
+    <ElementFile Location="Scripts\ViewModels\config.js" />
+    <ElementFile Location="Scripts\ViewModels\default.js" />
+    <ElementFile Location="Scripts\ViewModels\hwlist.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppLogo.png" />
+    <ElementFile Location="Images\Sample.jpg" />
+    <ElementManifest Location="ConfigurationValuesInstance\Elements.xml" />
+    <ElementManifest Location="ConfigurationValues\Elements.xml" />
+    <ElementFile Location="ConfigurationValues\Schema.xml" />
+    <ElementManifest Location="SiteAssets\Elements.xml" />
+    <ElementManifest Location="HomeworkInstance\Elements.xml" />
+    <ElementManifest Location="Homework\Elements.xml" />
+    <ElementFile Location="Homework\Schema.xml" />
+    <ElementFile Location="Homework\EditDlg.htm" />
+    <ElementFile Location="Homework\FileDlg.htm" />
+    <ElementFile Location="Homework\Repair.aspx" />
+    <ElementFile Location="Homework\Upload.aspx" />
+  </ElementManifests>
+</Feature>

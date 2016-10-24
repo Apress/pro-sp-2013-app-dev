@@ -1,0 +1,17 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\UnderhillIntegration.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\UnderhillIntegration.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\EntityFramework.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.Edm.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.OData.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.Services.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\System.Spatial.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\EntityFramework.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.Edm.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.OData.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.Services.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\bin\System.Spatial.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\obj\Release\UnderhillIntegration.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\obj\Release\UnderhillIntegration.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter8\UnderhillIntegration\UnderhillIntegration\obj\Release\UnderhillIntegration.pdb

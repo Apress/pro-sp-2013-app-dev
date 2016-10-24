@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3f65dcf3-9b09-484b-b8e7-e86b0a84730c}"
+       Name="PercentOfCourseGrade"
+       DisplayName="Percent Of Course Grade"
+       Type="Number"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

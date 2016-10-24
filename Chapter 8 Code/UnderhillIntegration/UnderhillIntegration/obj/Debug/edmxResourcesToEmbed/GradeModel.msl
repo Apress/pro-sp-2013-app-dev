@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClassroomOnlineModelStoreContainer" CdmEntityContainer="ClassroomOnlineEntities">
+    <EntitySetMapping Name="Grades">
+      <EntityTypeMapping TypeName="ClassroomOnlineModel.Grade">
+        <MappingFragment StoreEntitySet="Grade">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="ClassroomURL" ColumnName="ClassroomURL" />
+          <ScalarProperty Name="AssignmentTitle" ColumnName="AssignmentTitle" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="PointsPossible" ColumnName="PointsPossible" />
+          <ScalarProperty Name="PercentOfCourseGrade" ColumnName="PercentOfCourseGrade" />
+          <ScalarProperty Name="PointsAchieved" ColumnName="PointsAchieved" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="EnteredDate" ColumnName="EnteredDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

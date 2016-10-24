@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteWebApp", "RemoteWebApp\RemoteWebApp.csproj", "{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteWebAppWeb", "RemoteWebAppWeb\RemoteWebAppWeb.csproj", "{8D7447D9-03A0-4804-AB5C-0B466D3C96BE}"
+EndProject
+Global
+
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB7C3B9-AA41-4025-874B-EDC2B5F9E634}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8D7447D9-03A0-4804-AB5C-0B466D3C96BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7447D9-03A0-4804-AB5C-0B466D3C96BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7447D9-03A0-4804-AB5C-0B466D3C96BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7447D9-03A0-4804-AB5C-0B466D3C96BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

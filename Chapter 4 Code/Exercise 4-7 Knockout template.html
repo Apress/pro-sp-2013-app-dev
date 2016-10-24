@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js" ></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js" ></script>
+</head>
+<body>    
+    
+<script type="text/javascript">
+
+$(document).ready(startProcessing);
+    
+function startProcessing()
+{
+	ko.applyBindings(new GradeViewModel());
+}
+
+// Represents a student's grade in a course.
+function StudentGrade(student, grade) {
+	  var self = this;
+	  
+    self.student = ko.observable(student);
+    self.assignedGrade = ko.observable(grade);
+
+    self.gpaPoints = ko.computed(function() {
+    	  return self.assignedGrade().points.toFixed(2);      
+    });    
+}
+
+// View-Model for this screen, along with initial state
+function GradeViewModel() {
+	  var self = this;
+	  
+    self.possibleGrades = [
+                                      {gradeLabel:"A",points:4},{gradeLabel:"A-",points:3.75},
+        {gradeLabel:"B+",points:3.25},{gradeLabel:"B",points:3},{gradeLabel:"B-",points:2.75},
+        {gradeLabel:"C+",points:2.25},{gradeLabel:"C",points:2},{gradeLabel:"C-",points:1.75},
+        {gradeLabel:"D+",points:1.25},{gradeLabel:"D",points:1},{gradeLabel:"D-",points:0.75},
+        {gradeLabel:"F",points:0} 
+        ];
+
+    // This would be read from SharePoint or a database.
+    self.grades = ko.observableArray([
+        new StudentGrade("Steve Wright", this.possibleGrades[7]),
+        new StudentGrade("David Petersen", this.possibleGrades[3]),
+        new StudentGrade("Mark Twain", this.possibleGrades[0])
+    ]);
+
+    self.professor = {name:"Professor Moriarty",office:"Olvidy Basement"};
+    self.assistant = {name:"Raj Bashir, TA",office:"Greenwich 243"};
+
+    self.averageGrade = ko.computed(function() {
+    	  if (self.grades().length == 0) return "";
+    	 
+        var totalPoints = 0;
+        for (var i = 0; i < self.grades().length; i++)
+           totalPoints += parseFloat(self.grades()[i].gpaPoints());
+        return (totalPoints / self.grades().length).toFixed(2);
+    });    
+
+    // Operations
+    self.addStudent = function() { self.grades.push(new StudentGrade("", self.possibleGrades[0])); }
+    self.delStudent = function(studentGrade) { self.grades.remove(studentGrade) }
+}
+</script>
+
+<script type="text/html" id="faculty-template">
+    <span data-bind="text: name"></span> 
+    - (<span data-bind="text: office"></span>)
+</script>
+
+<script type="text/html" id="grade-line-template">
+   <tr>
+        <td><input data-bind="value: student" /></td>
+        <td><select data-bind="options: $root.possibleGrades, value: assignedGrade, optionsText: 'gradeLabel'"></select></td>
+        <td data-bind="text: gpaPoints" align="right"></td>
+        <td><a href="#" data-bind="click: $root.delStudent">Remove</a></td>
+    </tr>    
+</script>
+
+<h2>Enter Grades: <button data-bind="click: addStudent">Add a Grade</button></h2>
+<div data-bind="template: { name: 'faculty-template', data: professor }"></div>
+<div data-bind="template: { name: 'faculty-template', data: assistant }"></div>
+<table border="1" cellspacing="0" cellpadding="10">
+    <thead style='background-color:gray;color:white'><tr>
+        <th>Student Name</th>
+        <th>Grade</th>
+        <th>GPA Points</th>
+        <th></th>
+    </tr></thead>
+    <tbody data-bind="template: { name: 'grade-line-template', foreach: grades }">
+    </tbody>
+    <tfoot style='background-color:lightgray'>
+        <tr>
+            <td colspan="2">Average GPA Points Awarded: </td>
+            <td data-bind="text: averageGrade()" align="right"></td>
+            <td></td>
+        </tr>
+    </tfoot>  
+</table>
+
+</body>
+</html>

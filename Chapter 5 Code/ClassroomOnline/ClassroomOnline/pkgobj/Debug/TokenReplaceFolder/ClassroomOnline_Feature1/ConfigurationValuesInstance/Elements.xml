@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Configuration Values" OnQuickLaunch="FALSE" TemplateType="10000" Url="Lists/ConfigurationValues" Description="This list stores all configuration values for the Online Classroom Application." Hidden="FALSE">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">OrganizationName</Field>
+          <Field Name="Value">Underhill University</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">OrganizationLogoUrl</Field>
+          <Field Name="Value">../images/Sample.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">CourseName</Field>
+          <Field Name="Value">Introduction to Computer Science</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">CourseNumber</Field>
+          <Field Name="Value">CS 110</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Schedule</Field>
+          <Field Name="Value">MWF 10:30-11:30</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Location</Field>
+          <Field Name="Value">Comp Sci 318</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

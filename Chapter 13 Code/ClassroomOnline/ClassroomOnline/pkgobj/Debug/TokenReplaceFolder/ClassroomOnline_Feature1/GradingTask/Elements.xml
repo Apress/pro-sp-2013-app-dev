@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Workflow Task (SharePoint 2013) (0x0108003365C4474CAE8C42BCE396314E88E51F) -->
+  <ContentType ID="0x0108003365C4474CAE8C42BCE396314E88E51F0078D0295D11C649849467E259ECF0FD4B" Name="GradingTask" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{3f65dcf3-9b09-484b-b8e7-e86b0a84730c}" DisplayName="Percent Of Course Grade" Required="TRUE" Name="PercentOfCourseGrade" />
+      <FieldRef ID="{49dcce1d-e458-4ee7-a247-92068472d39e}" DisplayName="Points Possible" Required="TRUE" Name="PointsPossible" />
+      <FieldRef ID="{39bed8ce-20ad-405b-acb1-3990e9481f8e}" DisplayName="Points Achieved" Required="TRUE" Name="PointsAchieved" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

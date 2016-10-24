@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="e6fc1dc3-8d19-4533-a964-ef12c9e9a9d9" Scope="Web" Title="ClassroomOnline Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\Config.aspx" />
+    <ElementFile Location="Pages\app.master" />
+    <ElementFile Location="Pages\Roster.aspx" />
+    <ElementFile Location="Pages\UserProfile.aspx" />
+    <ElementFile Location="Pages\TestPermissions.aspx" />
+    <ElementFile Location="Pages\Gradebook.aspx" />
+    <ElementFile Location="Pages\Page1.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\jquery-1.7.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.intellisense.js" />
+    <ElementFile Location="Scripts\knockout-2.2.1.js" />
+    <ElementFile Location="Scripts\knockout-2.2.1.debug.js" />
+    <ElementFile Location="Scripts\Models\siteconfigs.js" />
+    <ElementFile Location="Scripts\ViewModels\config.js" />
+    <ElementFile Location="Scripts\ViewModels\default.js" />
+    <ElementFile Location="Scripts\ViewModels\roster.js" />
+    <ElementFile Location="Scripts\ViewModels\userprofile.js" />
+    <ElementFile Location="Scripts\ViewModels\testpermissions.js" />
+    <ElementFile Location="Scripts\ViewModels\gradebook.js" />
+    <ElementFile Location="Scripts\Models\grades.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppLogo.png" />
+    <ElementFile Location="Images\Sample.jpg" />
+    <ElementManifest Location="ConfigurationValuesInstance\Elements.xml" />
+    <ElementManifest Location="ConfigurationValues\Elements.xml" />
+    <ElementFile Location="ConfigurationValues\Schema.xml" />
+    <ElementManifest Location="SiteAssets\Elements.xml" />
+    <ElementManifest Location="GradesInstance\Elements.xml" />
+    <ElementManifest Location="Grades\Elements.xml" />
+    <ElementFile Location="Grades\Schema.xml" />
+  </ElementManifests>
+</Feature>

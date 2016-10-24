@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Course" OnQuickLaunch="FALSE" TemplateType="10002" Url="Lists/Course" Description="List of available course offerings">
+  <Data>
+    <Rows>
+      <Row>
+        <Field Name="Course Name">Introduction to Computer Science</Field>
+        <Field Name="School Name">Science</Field>
+        <Field Name="Course Number">CS 110</Field>
+        <Field Name="Credit Hours">3</Field>
+      </Row>
+      <Row>
+        <Field Name="Course Name">History of Science and Technology</Field>
+        <Field Name="School Name">History</Field>
+        <Field Name="Course Number">HIST 231</Field>
+        <Field Name="Credit Hours">4</Field>
+      </Row>
+      <Row>
+        <Field Name="Course Name">Chemistry</Field>
+        <Field Name="School Name">Science</Field>
+        <Field Name="Course Number">CHEM 115</Field>
+        <Field Name="Credit Hours">4</Field>
+      </Row>
+    </Rows>
+  </Data>
+</ListInstance>
+</Elements>

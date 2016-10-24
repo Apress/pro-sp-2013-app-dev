@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Images">
+    <File Path="Images\AppLogo.png" Url="Images/AppLogo.png" />
+    <File Path="Images\Sample.jpg" Url="Images/Sample.jpg" />
+  </Module>
+</Elements>

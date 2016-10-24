@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Url="Lists/Grades" Description="Grades" OnQuickLaunch="TRUE" Title="Grades">
+    <DataSource>
+      <Property Name="LobSystemInstance" Value="Grades" />
+      <Property Name="EntityNamespace" Value="ClassroomOnlineModel" />
+      <Property Name="Entity" Value="Grades" />
+      <Property Name="SpecificFinder" Value="ReadSpecificGrade" />
+      <Property Name="MetadataCatalogFileName" Value="BDCMetadata.bdcm" />
+    </DataSource>
+  </ListInstance>
+</Elements>

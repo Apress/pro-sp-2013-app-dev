@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" />
+    <File Path="Pages\Config.aspx" Url="Pages/Config.aspx" />
+    <File Path="Pages\app.master" Url="Pages/app.master" />
+    <File Path="Pages\Roster.aspx" Url="Pages/Roster.aspx" />
+    <File Path="Pages\UserProfile.aspx" Url="Pages/UserProfile.aspx" />
+    <File Path="Pages\TestPermissions.aspx" Url="Pages/TestPermissions.aspx" />
+    <File Path="Pages\Gradebook.aspx" Url="Pages/Gradebook.aspx" />
+    <File Path="Pages\Page1.aspx" Url="Pages/Page1.aspx" />
+  </Module>
+</Elements>

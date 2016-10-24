@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js" ></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js" ></script>
+</head>
+<body>    
+    
+<script type="text/javascript">
+
+$(document).ready(startProcessing);
+
+function startProcessing()
+{
+	ko.applyBindings(new GradeViewModel());
+}
+    
+function GradeViewModel() {
+    this.student = 'Steve Wright';
+    this.course = 'Creative Writing';
+    this.term = 'Spring 2013';
+    this.hours = 4;
+    this.grade = 'B-';
+    this.gpaPoints = 3.0;            
+};
+
+</script>
+
+  <h1>Data Binding with Knockout</h1>    
+
+  <div style='position: absolute; top: 100px; left: 0px'>
+    <h2>Read/Only</h2>
+    <table>
+    	<tr><td>Student Name:       </td><td><span data-bind="text: student"></span></td></tr>
+    	<tr><td>Course Name:        </td><td><span data-bind="text: course"></span></td></tr>
+    	<tr><td>Academic Term:      </td><td><span data-bind="text: term"></span></td></tr>
+    	<tr><td>Credit Hours:       </td><td><span data-bind="text: hours"></span></td></tr>
+    	<tr><td>Grade:              </td><td><span data-bind="text: grade"></span></td></tr>
+    	<tr><td>GPA Points Earned:  </td><td><span data-bind="text: gpaPoints"></span></td></tr>
+    </table>    
+  </div> 
+</body>
+</html>

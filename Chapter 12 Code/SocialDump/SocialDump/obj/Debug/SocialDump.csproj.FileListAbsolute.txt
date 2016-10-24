@@ -1,0 +1,3 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDump\bin\Debug\SocialDump.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDump\obj\Debug\SocialDump.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDump\obj\Debug\SocialDump.pdb

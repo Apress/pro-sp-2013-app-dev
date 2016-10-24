@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Grades" OnQuickLaunch="FALSE" TemplateType="10001" Url="Lists/Grades" Description="Course gradebook">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Assignment 1</Field>
+          <Field Name="Student Name">Steve Wright</Field>
+          <Field Name="Points Possible">100</Field>
+          <Field Name="Percent of Course Grade">10</Field>
+          <Field Name="Points Achieved">92</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Assignment 2</Field>
+          <Field Name="Student Name">Steve Wright</Field>
+          <Field Name="Points Possible">100</Field>
+          <Field Name="Percent of Course Grade">5</Field>
+          <Field Name="Points Achieved">99</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,2 @@
+obj\Debug\Workflow.g.xaml
+obj\Debug\ClassroomOnline.Grading_Workflow_Workflow_BeforeInitializeComponentHelper.txt

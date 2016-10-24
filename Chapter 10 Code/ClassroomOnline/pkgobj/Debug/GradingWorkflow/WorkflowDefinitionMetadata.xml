@@ -1,0 +1,7 @@
+﻿<WorkflowDefinition xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>My 'Grading Workflow' Workflow</Description>
+  <DisplayName>Grading Workflow</DisplayName>
+  <Id>c43583f5-ed26-40e8-bf9f-3e4250f8adc4</Id>
+  <RestrictAssociationToId>Lists/Homework</RestrictAssociationToId>
+  <RestrictAssociationToType>List</RestrictAssociationToType>
+</WorkflowDefinition>

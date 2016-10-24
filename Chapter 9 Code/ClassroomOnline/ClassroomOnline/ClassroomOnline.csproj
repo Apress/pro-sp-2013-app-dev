@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D25E0585-9CDD-4267-BC22-CF34FF51A340}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassroomOnline</RootNamespace>
+    <AssemblyName>ClassroomOnline</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{41b9d83c-641e-45db-b44d-7591545bcdd7}</AppFeaturePartId>
+    <WspPartId>{fa092f6a-8145-4f4c-b5dc-cbbe040a8bad}</WspPartId>
+    <CspkgPartId>{a45ed04d-6c84-4851-9dd6-78a3d1f291ad}</CspkgPartId>
+    <SqlPackagePartId>{5269df51-4894-4989-aa37-a0f68d267ee0}</SqlPackagePartId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ActivePublishProfile />
+    <WorkflowPartId>{09267a7f-3779-4475-bd8b-3e719ba642a0}</WorkflowPartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="GradeHistory\Elements.xml" />
+    <Content Include="GradeHistory\GradeHistoryInstance\Elements.xml" />
+    <Content Include="GradeHistory\Schema.xml" />
+    <Content Include="GradesEventReceiver\Elements.xml" />
+    <Content Include="Grades\Elements.xml" />
+    <Content Include="Grades\GradesInstance\Elements.xml" />
+    <Content Include="Grades\Schema.xml" />
+    <Content Include="GradingTask\Elements.xml" />
+    <Content Include="Homework\EditDlg.htm" />
+    <Content Include="Homework\Elements.xml" />
+    <Content Include="Homework\FileDlg.htm" />
+    <Content Include="Homework\HomeworkInstance\Elements.xml" />
+    <Content Include="Homework\Repair.aspx" />
+    <Content Include="Homework\Schema.xml" />
+    <Content Include="Homework\Upload.aspx" />
+    <Content Include="Images\Sample.jpg" />
+    <Content Include="Pages\Gradebook.aspx" />
+    <Content Include="Pages\Homework.aspx" />
+    <Content Include="Pages\TestPermissions.aspx" />
+    <Content Include="Pages\UserProfile.aspx" />
+    <Content Include="Pages\Roster.aspx" />
+    <Content Include="PercentOfCourseGrade\Elements.xml" />
+    <Content Include="PointsAchieved\Elements.xml" />
+    <Content Include="PointsPossible\Elements.xml" />
+    <Content Include="Scripts\Models\grades.js" />
+    <Content Include="Scripts\Models\siteconfigs.js" />
+    <Content Include="Scripts\ViewModels\config.js" />
+    <Content Include="Scripts\ViewModels\gradebook.js" />
+    <Content Include="Scripts\ViewModels\testpermissions.js" />
+    <Content Include="Scripts\ViewModels\roster.js" />
+    <Content Include="Scripts\ViewModels\userprofile.js" />
+    <Content Include="SiteAssets\Elements.xml" />
+    <Content Include="WorkflowHistoryList\Elements.xml" />
+    <Content Include="WorkflowTaskList\Elements.xml" />
+    <None Include="ConfigurationValues\ConfigurationValuesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3609d6f1-ed6b-489c-8e12-8337210aab0d}</SharePointProjectItemId>
+    </None>
+    <None Include="ConfigurationValues\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35679ba0-b640-4fcd-888b-943aba99d003}</SharePointProjectItemId>
+    </None>
+    <None Include="GradeHistory\GradeHistoryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a482336-1f24-4e4f-a673-1666586cef62}</SharePointProjectItemId>
+    </None>
+    <None Include="GradeHistory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7041b57-2c8e-4803-84b2-dc818fae0d70}</SharePointProjectItemId>
+    </None>
+    <None Include="GradesEventReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{798b3cf4-9c4b-4174-a3d0-594187659931}</SharePointProjectItemId>
+    </None>
+    <None Include="Grades\GradesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37f76409-2e93-4acb-9707-7a6f42b087b9}</SharePointProjectItemId>
+    </None>
+    <None Include="Grades\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c3c313b-a968-4f11-98fc-3f1ff6525227}</SharePointProjectItemId>
+    </None>
+    <None Include="GradingTask\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dbffd3df-961d-4fb9-a002-7c62573ed872}</SharePointProjectItemId>
+    </None>
+    <None Include="GradingWorkflow\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c3196f38-3dfa-4b9e-a4cd-930db67b4f51}</SharePointProjectItemId>
+    </None>
+    <None Include="Homework\HomeworkInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6404d214-1e2b-47f3-aaf5-06f082590285}</SharePointProjectItemId>
+    </None>
+    <None Include="Homework\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{778ad74b-664d-44e5-99c9-eca1fe2edc1b}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\app.master" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9447ab8b-ae57-471b-a158-34c334b283e5}</SharePointProjectItemId>
+    </None>
+    <Content Include="ConfigurationValues\ConfigurationValuesInstance\Elements.xml" />
+    <Content Include="ConfigurationValues\Elements.xml" />
+    <Content Include="ConfigurationValues\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\AppLogo.png" />
+    <Content Include="Pages\Config.aspx" />
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\Default.aspx" />
+    <None Include="PercentOfCourseGrade\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6b17263-c1dd-41d7-acb5-818b95b57656}</SharePointProjectItemId>
+    </None>
+    <None Include="PointsAchieved\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2acca756-6b44-434f-b5d2-ac522412d238}</SharePointProjectItemId>
+    </None>
+    <None Include="PointsPossible\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d178d160-d341-4abe-94f4-5232c27225d9}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteAssets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{148fff2d-db28-4701-bbd0-87c297cd8941}</SharePointProjectItemId>
+    </None>
+    <None Include="WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e39fc592-3e77-4d00-84c0-c2ed1d60ddbf}</SharePointProjectItemId>
+    </None>
+    <None Include="WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0a1d47d7-cb01-4684-9e70-4cb9d957c13f}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5269df51-4894-4989-aa37-a0f68d267ee0}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\ViewModels\default.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\knockout-2.2.1.debug.js" />
+    <Content Include="Scripts\knockout-2.2.1.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ccc83a95-1a49-44d3-bfee-ad0b1aaebab4}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28dd05d0-c62b-444f-8fbf-b3d729f192d6}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{53c28cd8-a396-45d0-b7ed-313f615add11}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{e6fc1dc3-8d19-4533-a964-ef12c9e9a9d9}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassroomOnlineWeb\ClassroomOnlineWeb.csproj">
+      <Project>{B8FA8804-D8D3-472F-B89A-BE0FC9BF2084}</Project>
+      <Name>ClassroomOnlineWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>ClassroomOnlineWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="GradingWorkflow\Workflow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="a53acec4-3e36-4cce-91ca-9a428c5f3e5e" Scope="Web" Title="Exercise7-3 Feature1">
+  <ElementManifests>
+    <ElementManifest Location="EmptyElement1\Elements.xml" />
+  </ElementManifests>
+</Feature>

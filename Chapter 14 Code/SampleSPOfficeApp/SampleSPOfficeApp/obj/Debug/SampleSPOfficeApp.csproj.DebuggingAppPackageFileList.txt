@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\SampleTaskPaneAppManifest.xml
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter14\SampleSPOfficeApp\SampleSPOfficeApp\bin\Debug\SampleSPOfficeApp.debugapp

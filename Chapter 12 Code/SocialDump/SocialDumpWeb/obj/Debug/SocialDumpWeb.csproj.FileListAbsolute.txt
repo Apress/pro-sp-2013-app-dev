@@ -1,0 +1,10 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\SocialDumpWeb.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\SocialDumpWeb.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\Microsoft.IdentityModel.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\Microsoft.SharePoint.Client.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\obj\Debug\SocialDumpWeb.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\obj\Debug\SocialDumpWeb.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter12\SocialDump\SocialDumpWeb\obj\Debug\SocialDumpWeb.pdb

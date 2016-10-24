@@ -1,0 +1,10 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\ClassroomOnlineWeb.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\ClassroomOnlineWeb.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\Microsoft.IdentityModel.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\Microsoft.SharePoint.Client.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\obj\Debug\ClassroomOnlineWeb.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\obj\Debug\ClassroomOnlineWeb.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\ClassroomOnline\ClassroomOnlineWeb\obj\Debug\ClassroomOnlineWeb.pdb

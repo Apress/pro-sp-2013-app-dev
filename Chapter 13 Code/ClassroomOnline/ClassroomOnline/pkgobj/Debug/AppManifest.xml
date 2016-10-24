@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest" Name="ClassroomOnline" ProductID="{9447ab8b-ae57-471b-a158-34c334b283e5}" Version="1.0.0.0" SharePointMinVersion="15.0.0.0">
+  <Properties>
+    <Title>Classroom Online</Title>
+    <StartPage>https://localhost:44313/Pages/VerifyLicense.aspx?{StandardTokens}</StartPage>
+    <SettingsPage>https://localhost:44313/Pages/Config.aspx?{StandardTokens}</SettingsPage>
+  </Properties>
+  <AppPrincipal>
+    <AutoDeployedWebApplication>
+      <DebugInfo ClientSecret="mpszauzp7JNgbKShjZ13rxrFZC0puewOaZowGQwOI9Y=" AppUrl="https://localhost:44313/;https://sp2013apps.servicebus.windows.net/SWRIGHT-W8/Steve/obj/b8fa8804-d8d3-472f-b89a-be0fc9bf2084/" />
+    </AutoDeployedWebApplication>
+  </AppPrincipal>
+  <AppPrerequisites>
+    <AppPrerequisite Type="AutoProvisioning" ID="RemoteWebHost" />
+    <AppPrerequisite Type="Capability" ID="CDD8F991-B459-4512-8048-03D5A03FF27E" />
+  </AppPrerequisites>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read" />
+  </AppPermissionRequests>
+</App>

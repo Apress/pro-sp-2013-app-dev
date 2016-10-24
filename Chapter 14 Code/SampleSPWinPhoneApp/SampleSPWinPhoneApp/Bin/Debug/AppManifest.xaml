@@ -1,0 +1,10 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SampleSPWinPhoneApp" EntryPointType="SampleSPWinPhoneApp.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SampleSPWinPhoneApp" Source="SampleSPWinPhoneApp.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.SharePoint.Client.Phone.Auth.UI" Source="Microsoft.SharePoint.Client.Phone.Auth.UI.dll" />
+    <AssemblyPart x:Name="Microsoft.SharePoint.Client.Phone" Source="Microsoft.SharePoint.Client.Phone.dll" />
+    <AssemblyPart x:Name="Microsoft.SharePoint.Client.Phone.Runtime" Source="Microsoft.SharePoint.Client.Phone.Runtime.dll" />
+    <AssemblyPart x:Name="Microsoft.SharePoint.Phone.Application" Source="Microsoft.SharePoint.Phone.Application.dll" />
+  </Deployment.Parts>
+</Deployment>

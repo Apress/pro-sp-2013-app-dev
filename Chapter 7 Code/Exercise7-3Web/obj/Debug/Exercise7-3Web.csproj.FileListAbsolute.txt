@@ -1,0 +1,10 @@
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\Exercise7-3Web.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\Exercise7-3Web.pdb
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\Microsoft.IdentityModel.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\Microsoft.SharePoint.Client.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\obj\Debug\Exercise7-3Web.csprojResolveAssemblyReference.cache
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\obj\Debug\Exercise7-3Web.dll
+C:\Users\Steve\Documents\TFSOnline\SharePoint 2013 Apps\Chapter7\Exercise7-3Web\obj\Debug\Exercise7-3Web.pdb
